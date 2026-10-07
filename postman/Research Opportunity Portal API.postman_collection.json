@@ -1,0 +1,164 @@
+{
+  "info": {
+    "_postman_id": "7d353a3c-6d51-47e0-a021-16b2b0bdf5d4",
+    "name": "Research Opportunity Portal API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58767216",
+    "_collection_link": "https://go.postman.co/collection/58767216-7d353a3c-6d51-47e0-a021-16b2b0bdf5d4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Opportunity",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Renewable Energy Optimization\",\r\n  \"description\": \"Research project focused on improving the efficiency of renewable energy systems using data analysis and optimization techniques.\",\r\n  \"research_area\": \"Renewable Energy\",\r\n  \"faculty_name\": \"Dr. Sara Ahmed\",\r\n  \"department\": \"Electrical Engineering\",\r\n  \"required_skills\": \"MATLAB, Python, Data Analysis\",\r\n  \"available_positions\": 2,\r\n  \"application_deadline\": \"2026-11-20\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Opportunities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Opportunity By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Opportunity",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Advanced AI-Based Medical Image Analysis\",\r\n  \"description\": \"Updated research project exploring advanced artificial intelligence techniques for medical image analysis.\",\r\n  \"research_area\": \"Artificial Intelligence and Computer Vision\",\r\n  \"faculty_name\": \"Dr. Ahmed Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, Machine Learning, Deep Learning, Computer Vision\",\r\n  \"available_positions\": 2,\r\n  \"application_deadline\": \"2026-12-15\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/opportunities/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Close Opportunity",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Cybersecurity Threat Detection\",\r\n  \"description\": \"Research project investigating machine learning techniques for detecting and classifying cybersecurity threats.\",\r\n  \"research_area\": \"Cybersecurity\",\r\n  \"faculty_name\": \"Dr. Bilal Hussain\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, Cybersecurity, Machine Learning\",\r\n  \"available_positions\": 4,\r\n  \"application_deadline\": \"2026-12-05\",\r\n  \"status\": \"Closed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Opportunity",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Deleted Opportunity (404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validation Test (400)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
